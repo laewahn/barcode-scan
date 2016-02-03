@@ -14,6 +14,7 @@
 		95C703581C614A7F0009FCE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C703571C614A7F0009FCE1 /* Assets.xcassets */; };
 		95C7035B1C614A7F0009FCE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C703591C614A7F0009FCE1 /* LaunchScreen.storyboard */; };
 		95C703661C614A7F0009FCE1 /* BarcodeScannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C703651C614A7F0009FCE1 /* BarcodeScannerTests.m */; };
+		95D3A1E91C629747001EB5AD /* VideoOutputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D3A1E81C629747001EB5AD /* VideoOutputView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		95C703611C614A7F0009FCE1 /* BarcodeScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarcodeScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C703651C614A7F0009FCE1 /* BarcodeScannerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarcodeScannerTests.m; sourceTree = "<group>"; };
 		95C703671C614A7F0009FCE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95D3A1E71C629747001EB5AD /* VideoOutputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoOutputView.h; sourceTree = "<group>"; };
+		95D3A1E81C629747001EB5AD /* VideoOutputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoOutputView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				95C703591C614A7F0009FCE1 /* LaunchScreen.storyboard */,
 				95C7035C1C614A7F0009FCE1 /* Info.plist */,
 				95C7034B1C614A7F0009FCE1 /* Supporting Files */,
+				95D3A1E71C629747001EB5AD /* VideoOutputView.h */,
+				95D3A1E81C629747001EB5AD /* VideoOutputView.m */,
 			);
 			path = BarcodeScanner;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 				95C703531C614A7F0009FCE1 /* ViewController.m in Sources */,
 				95C703501C614A7F0009FCE1 /* AppDelegate.m in Sources */,
 				95C7034D1C614A7F0009FCE1 /* main.m in Sources */,
+				95D3A1E91C629747001EB5AD /* VideoOutputView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
