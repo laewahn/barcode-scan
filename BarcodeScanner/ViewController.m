@@ -8,20 +8,61 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-
-@end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self.view.layer addSublayer:[self videoPreview]];
+    [self.captureSession startRunning];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+# pragma mark Property initializers
+
+- (AVCaptureDevice *)captureDevice
+{
+    if (_captureDevice == nil) {
+        _captureDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    }
+    
+    return _captureDevice;
+}
+
+- (AVCaptureDeviceInput *)captureInput
+{
+    if (_captureInput == nil) {
+        NSError* inputDeviceCreationError;
+        _captureInput = [AVCaptureDeviceInput deviceInputWithDevice:[self captureDevice] error:&inputDeviceCreationError];
+        
+        if (inputDeviceCreationError != nil) {
+            NSLog(@"Creating input device failed with error: %@", inputDeviceCreationError);
+        }
+    }
+    
+    return _captureInput;
+}
+
+- (AVCaptureSession *)captureSession
+{
+    if (_captureSession == nil) {
+        _captureSession = [[AVCaptureSession alloc] init];
+        [_captureSession addInput:[self captureInput]];
+    }
+    
+    return _captureSession;
+}
+
+- (AVCaptureVideoPreviewLayer *)videoPreview
+{
+    if (_videoPreview == nil) {
+        _videoPreview = [AVCaptureVideoPreviewLayer layerWithSession:[self captureSession]];
+        [_videoPreview setVideoGravity:AVLayerVideoGravityResizeAspectFill];
+        CGRect bounds = [self.view bounds];
+        [_videoPreview setFrame:bounds];
+    }
+    
+    return _videoPreview;
 }
 
 @end
