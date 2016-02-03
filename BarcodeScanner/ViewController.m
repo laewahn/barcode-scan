@@ -13,10 +13,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view.layer addSublayer:[self videoPreview]];
+    [self.videoOutputView.layer addSublayer:[self videoPreview]];
     [self.captureSession startRunning];
 }
 
+- (void)viewDidLayoutSubviews
+{
+    CGRect videoOutputBounds = [self.videoOutputView bounds];
+    [self.videoPreview setFrame:videoOutputBounds];
+}
 
 # pragma mark Property initializers
 
@@ -58,8 +63,6 @@
     if (_videoPreview == nil) {
         _videoPreview = [AVCaptureVideoPreviewLayer layerWithSession:[self captureSession]];
         [_videoPreview setVideoGravity:AVLayerVideoGravityResizeAspectFill];
-        CGRect bounds = [self.view bounds];
-        [_videoPreview setFrame:bounds];
     }
     
     return _videoPreview;

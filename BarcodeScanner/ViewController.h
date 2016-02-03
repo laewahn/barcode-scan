@@ -11,6 +11,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *videoOutputView;
+
 @property(nonatomic, strong) AVCaptureDevice* captureDevice;
 @property(nonatomic, strong) AVCaptureDeviceInput* captureInput;
 @property(nonatomic, strong) AVCaptureSession* captureSession;
