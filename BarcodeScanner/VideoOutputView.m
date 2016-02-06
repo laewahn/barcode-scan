@@ -26,6 +26,11 @@
     [self.captureSession startRunning];
 }
 
+- (void)addCaptureOutput:(AVCaptureOutput *)output
+{
+    [self.captureSession addOutput:output];
+}
+
 - (AVCaptureDevice *)captureDevice
 {
     if (_captureDevice == nil) {

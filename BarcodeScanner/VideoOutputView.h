@@ -12,6 +12,7 @@
 @interface VideoOutputView : UIView
 
 - (void)startRunning;
+- (void)addCaptureOutput:(AVCaptureOutput *)output;
 
 @property(nonatomic, strong) AVCaptureDevice* captureDevice;
 @property(nonatomic, strong) AVCaptureDeviceInput* captureInput;

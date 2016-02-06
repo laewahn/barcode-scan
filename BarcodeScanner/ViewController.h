@@ -11,7 +11,7 @@
 
 @class VideoOutputView;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<AVCaptureMetadataOutputObjectsDelegate>
 
 @property (weak, nonatomic) IBOutlet VideoOutputView *videoOutputView;
 
