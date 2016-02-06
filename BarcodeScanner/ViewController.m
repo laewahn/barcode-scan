@@ -33,11 +33,13 @@
     
     dispatch_queue_t dispatchQueue = dispatch_queue_create("barcodeScanQueue", NULL);
     [barcodeCaptureOutput setMetadataObjectsDelegate:self queue:dispatchQueue];
-    
+
     [self.videoOutputView addCaptureOutput:barcodeCaptureOutput];
     
-    NSArray* availableMetadataObjectTypes = [barcodeCaptureOutput availableMetadataObjectTypes];
-    [barcodeCaptureOutput setMetadataObjectTypes:availableMetadataObjectTypes];
+    [barcodeCaptureOutput setMetadataObjectTypes:@[
+                                                   AVMetadataObjectTypeCode128Code,
+                                                   AVMetadataObjectTypeCode39Code
+                                                   ]];
 }
 
 - (void)viewWillAppear:(BOOL)animated
