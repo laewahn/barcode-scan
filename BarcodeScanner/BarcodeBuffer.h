@@ -13,7 +13,9 @@
 @interface BarcodeBuffer : NSObject
 
 - (void)registerOrUpdateBarcode:(Barcode *)barcode;
+- (void)cleanupExpiredBarcodesAt:(NSDate *)currentDate;
 
-@property(nonatomic, readonly, copy) NSMutableArray* barcodes;
+@property(nonatomic, readonly, copy) NSArray* barcodes;
+@property(nonatomic, assign) NSTimeInterval barcodeExpirationTime;
 
 @end

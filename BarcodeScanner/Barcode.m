@@ -10,16 +10,22 @@
 
 @implementation Barcode
 
-- (instancetype)initWithValue:(NSString *)value type:(NSString *)type bounds:(CGRect) bounds
+- (instancetype)initWithValue:(NSString *)value type:(NSString *)type bounds:(CGRect) bounds timestamp:(NSDate *)timestamp
 {
     self = [super init];
     if (self) {
         _value = value;
         _type = type;
         _bounds = bounds;
+        _timestamp = timestamp;
     }
     
     return self;
+}
+
+- (BOOL)isOlderThan:(NSDate *)referenceDate
+{
+    return [self.timestamp compare:referenceDate] == NSOrderedAscending;
 }
 
 - (BOOL)isEqual:(id)object

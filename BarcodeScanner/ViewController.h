@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *barcodeTextView;
 
 @property (strong, nonatomic) BarcodeBuffer* barcodeBuffer;
+@property (strong, nonatomic) NSTimer* barcodeExpirationCheckTimer;
 
 @end
 

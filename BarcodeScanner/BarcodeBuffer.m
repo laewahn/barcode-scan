@@ -10,6 +10,17 @@
 
 #import "Barcode.h"
 
+@interface NSDate (Convenience)
+- (NSDate *)dateBySubtractingTimeInterval:(NSTimeInterval)timeinterval;
+@end
+
+@implementation NSDate (Convenience)
+- (NSDate *)dateBySubtractingTimeInterval:(NSTimeInterval)timeinterval
+{
+    return [self dateByAddingTimeInterval:-timeinterval];
+}
+@end
+
 @interface BarcodeBuffer()
 @property(nonatomic, strong) NSMutableDictionary* barcodesByTypeAndValue;
 @end
@@ -20,8 +31,24 @@
 
 - (void)registerOrUpdateBarcode:(Barcode *)barcode
 {
-    NSString* barcodeHash = [NSString stringWithFormat:@"%@.%@", [barcode type], [barcode value]];
-    [self.barcodesByTypeAndValue setObject:barcode forKey:barcodeHash];
+    [self.barcodesByTypeAndValue setObject:barcode forKey:[self hashForBarcode:barcode]];
+}
+
+- (void)cleanupExpiredBarcodesAt:(NSDate *)currentDate
+{
+    NSArray* allBarcodesCopy = [self barcodes];
+    
+    for (Barcode* barcode in allBarcodesCopy) {
+        NSDate* expirationDate = [currentDate dateBySubtractingTimeInterval:[self barcodeExpirationTime]];
+        if ([barcode isOlderThan:expirationDate]) {
+            [self.barcodesByTypeAndValue removeObjectForKey:[self hashForBarcode:barcode]];
+        }
+    }
+}
+
+- (NSString *)hashForBarcode:(Barcode *)barcode
+{
+    return [NSString stringWithFormat:@"%@.%@", [barcode type], [barcode value]];
 }
 
 - (NSMutableDictionary *)barcodesByTypeAndValue

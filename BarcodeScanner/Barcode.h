@@ -11,10 +11,13 @@
 
 @interface Barcode : NSObject
 
-- (instancetype)initWithValue:(NSString *)value type:(NSString *)type bounds:(CGRect) bounds;
+- (instancetype)initWithValue:(NSString *)value type:(NSString *)type bounds:(CGRect) bounds timestamp:(NSDate *)timestamp;
+
+- (BOOL)isOlderThan:(NSDate *)referenceDate;
 
 @property(nonatomic, strong) NSString* value;
 @property(nonatomic, strong) NSString* type;
 @property(nonatomic, assign) CGRect bounds;
+@property(nonatomic, strong) NSDate* timestamp;
 
 @end
