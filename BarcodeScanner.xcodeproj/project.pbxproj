@@ -11,6 +11,7 @@
 		951D8A6F1C660F0A00E71C74 /* BarcodeBufferTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 951D8A6E1C660F0A00E71C74 /* BarcodeBufferTests.m */; };
 		951D8A721C660FF500E71C74 /* BarcodeBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 951D8A711C660FF500E71C74 /* BarcodeBuffer.m */; };
 		951D8A741C66149A00E71C74 /* BarcodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 951D8A731C66149A00E71C74 /* BarcodeTest.m */; };
+		951D8A771C664B1500E71C74 /* NSDate+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 951D8A761C664B1500E71C74 /* NSDate+Convenience.m */; };
 		95C7034D1C614A7F0009FCE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C7034C1C614A7F0009FCE1 /* main.m */; };
 		95C703501C614A7F0009FCE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C7034F1C614A7F0009FCE1 /* AppDelegate.m */; };
 		95C703531C614A7F0009FCE1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C703521C614A7F0009FCE1 /* ViewController.m */; };
@@ -37,6 +38,8 @@
 		951D8A701C660FF500E71C74 /* BarcodeBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeBuffer.h; sourceTree = "<group>"; };
 		951D8A711C660FF500E71C74 /* BarcodeBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeBuffer.m; sourceTree = "<group>"; };
 		951D8A731C66149A00E71C74 /* BarcodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeTest.m; sourceTree = "<group>"; };
+		951D8A751C664B1500E71C74 /* NSDate+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Convenience.h"; sourceTree = "<group>"; };
+		951D8A761C664B1500E71C74 /* NSDate+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Convenience.m"; sourceTree = "<group>"; };
 		95C703481C614A7F0009FCE1 /* BarcodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcodeScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C7034C1C614A7F0009FCE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		95C7034E1C614A7F0009FCE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 				951D8A6C1C660E2800E71C74 /* Barcode.m */,
 				951D8A701C660FF500E71C74 /* BarcodeBuffer.h */,
 				951D8A711C660FF500E71C74 /* BarcodeBuffer.m */,
+				951D8A751C664B1500E71C74 /* NSDate+Convenience.h */,
+				951D8A761C664B1500E71C74 /* NSDate+Convenience.m */,
 			);
 			path = BarcodeScanner;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 				95C7034D1C614A7F0009FCE1 /* main.m in Sources */,
 				951D8A721C660FF500E71C74 /* BarcodeBuffer.m in Sources */,
 				95D3A1E91C629747001EB5AD /* VideoOutputView.m in Sources */,
+				951D8A771C664B1500E71C74 /* NSDate+Convenience.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

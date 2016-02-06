@@ -10,6 +10,8 @@
 
 @implementation VideoOutputView
 
+# pragma mark View life cycle
+
 - (void)awakeFromNib
 {
     [self.layer addSublayer:[self videoPreview]];
@@ -17,19 +19,11 @@
 
 - (void)layoutSubviews
 {
-    CGRect bounds = [self bounds];
-    [self.videoPreview setFrame:bounds];
+    [self.videoPreview setFrame:[self bounds]];
 }
 
-- (void)startRunning
-{
-    [self.captureSession startRunning];
-}
 
-- (void)addCaptureOutput:(AVCaptureOutput *)output
-{
-    [self.captureSession addOutput:output];
-}
+# pragma mark Property implementation
 
 - (AVCaptureDevice *)captureDevice
 {
@@ -74,5 +68,17 @@
     return _videoPreview;
 }
 
+
+# pragma mark Public interface
+
+- (void)startRunning
+{
+    [self.captureSession startRunning];
+}
+
+- (void)addCaptureOutput:(AVCaptureOutput *)output
+{
+    [self.captureSession addOutput:output];
+}
 
 @end

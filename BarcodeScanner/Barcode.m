@@ -10,6 +10,9 @@
 
 @implementation Barcode
 
+
+# pragma mark Initialization
+
 - (instancetype)initWithValue:(NSString *)value type:(NSString *)type bounds:(CGRect) bounds timestamp:(NSDate *)timestamp
 {
     self = [super init];
@@ -22,6 +25,9 @@
     
     return self;
 }
+
+
+# pragma mark Comparison
 
 - (BOOL)isOlderThan:(NSDate *)referenceDate
 {
