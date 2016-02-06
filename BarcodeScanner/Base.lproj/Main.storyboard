@@ -43,6 +43,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="barcodeTextView" destination="PMs-bn-ZYV" id="33k-Cj-VfH"/>
                         <outlet property="videoOutputView" destination="r66-Q9-Vrn" id="KP0-pC-gLq"/>
                     </connections>
                 </viewController>

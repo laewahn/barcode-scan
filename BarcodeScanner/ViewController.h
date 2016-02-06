@@ -10,10 +10,14 @@
 #import <AVFoundation/AVFoundation.h>
 
 @class VideoOutputView;
+@class BarcodeBuffer;
 
 @interface ViewController : UIViewController<AVCaptureMetadataOutputObjectsDelegate>
 
 @property (weak, nonatomic) IBOutlet VideoOutputView *videoOutputView;
+@property (weak, nonatomic) IBOutlet UITextView *barcodeTextView;
+
+@property (strong, nonatomic) BarcodeBuffer* barcodeBuffer;
 
 @end
 

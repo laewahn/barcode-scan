@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		951D8A6D1C660E2800E71C74 /* Barcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 951D8A6C1C660E2800E71C74 /* Barcode.m */; };
+		951D8A6F1C660F0A00E71C74 /* BarcodeBufferTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 951D8A6E1C660F0A00E71C74 /* BarcodeBufferTests.m */; };
+		951D8A721C660FF500E71C74 /* BarcodeBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 951D8A711C660FF500E71C74 /* BarcodeBuffer.m */; };
+		951D8A741C66149A00E71C74 /* BarcodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 951D8A731C66149A00E71C74 /* BarcodeTest.m */; };
 		95C7034D1C614A7F0009FCE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C7034C1C614A7F0009FCE1 /* main.m */; };
 		95C703501C614A7F0009FCE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C7034F1C614A7F0009FCE1 /* AppDelegate.m */; };
 		95C703531C614A7F0009FCE1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C703521C614A7F0009FCE1 /* ViewController.m */; };
 		95C703561C614A7F0009FCE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C703541C614A7F0009FCE1 /* Main.storyboard */; };
 		95C703581C614A7F0009FCE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95C703571C614A7F0009FCE1 /* Assets.xcassets */; };
 		95C7035B1C614A7F0009FCE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C703591C614A7F0009FCE1 /* LaunchScreen.storyboard */; };
-		95C703661C614A7F0009FCE1 /* BarcodeScannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C703651C614A7F0009FCE1 /* BarcodeScannerTests.m */; };
 		95D3A1E91C629747001EB5AD /* VideoOutputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D3A1E81C629747001EB5AD /* VideoOutputView.m */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		951D8A6B1C660E2800E71C74 /* Barcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Barcode.h; sourceTree = "<group>"; };
+		951D8A6C1C660E2800E71C74 /* Barcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Barcode.m; sourceTree = "<group>"; };
+		951D8A6E1C660F0A00E71C74 /* BarcodeBufferTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeBufferTests.m; sourceTree = "<group>"; };
+		951D8A701C660FF500E71C74 /* BarcodeBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeBuffer.h; sourceTree = "<group>"; };
+		951D8A711C660FF500E71C74 /* BarcodeBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeBuffer.m; sourceTree = "<group>"; };
+		951D8A731C66149A00E71C74 /* BarcodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeTest.m; sourceTree = "<group>"; };
 		95C703481C614A7F0009FCE1 /* BarcodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcodeScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95C7034C1C614A7F0009FCE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		95C7034E1C614A7F0009FCE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,7 +48,6 @@
 		95C7035A1C614A7F0009FCE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95C7035C1C614A7F0009FCE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95C703611C614A7F0009FCE1 /* BarcodeScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarcodeScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		95C703651C614A7F0009FCE1 /* BarcodeScannerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarcodeScannerTests.m; sourceTree = "<group>"; };
 		95C703671C614A7F0009FCE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95D3A1E71C629747001EB5AD /* VideoOutputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoOutputView.h; sourceTree = "<group>"; };
 		95D3A1E81C629747001EB5AD /* VideoOutputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoOutputView.m; sourceTree = "<group>"; };
@@ -95,6 +103,10 @@
 				95C7034B1C614A7F0009FCE1 /* Supporting Files */,
 				95D3A1E71C629747001EB5AD /* VideoOutputView.h */,
 				95D3A1E81C629747001EB5AD /* VideoOutputView.m */,
+				951D8A6B1C660E2800E71C74 /* Barcode.h */,
+				951D8A6C1C660E2800E71C74 /* Barcode.m */,
+				951D8A701C660FF500E71C74 /* BarcodeBuffer.h */,
+				951D8A711C660FF500E71C74 /* BarcodeBuffer.m */,
 			);
 			path = BarcodeScanner;
 			sourceTree = "<group>";
@@ -110,8 +122,9 @@
 		95C703641C614A7F0009FCE1 /* BarcodeScannerTests */ = {
 			isa = PBXGroup;
 			children = (
-				95C703651C614A7F0009FCE1 /* BarcodeScannerTests.m */,
 				95C703671C614A7F0009FCE1 /* Info.plist */,
+				951D8A6E1C660F0A00E71C74 /* BarcodeBufferTests.m */,
+				951D8A731C66149A00E71C74 /* BarcodeTest.m */,
 			);
 			path = BarcodeScannerTests;
 			sourceTree = "<group>";
@@ -219,7 +232,9 @@
 			files = (
 				95C703531C614A7F0009FCE1 /* ViewController.m in Sources */,
 				95C703501C614A7F0009FCE1 /* AppDelegate.m in Sources */,
+				951D8A6D1C660E2800E71C74 /* Barcode.m in Sources */,
 				95C7034D1C614A7F0009FCE1 /* main.m in Sources */,
+				951D8A721C660FF500E71C74 /* BarcodeBuffer.m in Sources */,
 				95D3A1E91C629747001EB5AD /* VideoOutputView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,7 +243,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95C703661C614A7F0009FCE1 /* BarcodeScannerTests.m in Sources */,
+				951D8A741C66149A00E71C74 /* BarcodeTest.m in Sources */,
+				951D8A6F1C660F0A00E71C74 /* BarcodeBufferTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
